@@ -2,9 +2,9 @@
 # exit on error
 set -o errexit
 
-# Install required build tools for C++ extensions
+# Install system packages required for compilation
 apt-get update
-apt-get install -y build-essential
+apt-get install -y build-essential libssl-dev libffi-dev
 
 # Install Python dependencies
 pip install -r requirements.txt
