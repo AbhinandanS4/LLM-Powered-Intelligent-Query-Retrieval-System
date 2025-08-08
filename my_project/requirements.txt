@@ -1,7 +1,7 @@
-Django==4.2.7
-PyPDF2==3.0.1
-langchain-text-splitters==0.0.1
-sentence-transformers==2.2.2
-qdrant-client==1.7.3
-google-generativeai==0.5.4
-gunicorn
+Django
+unstructured-client
+langchain-text-splitters
+sentence-transformers
+qdrant-client
+groq
+python-dotenv
