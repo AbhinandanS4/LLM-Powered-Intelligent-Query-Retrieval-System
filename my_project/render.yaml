@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-django-api
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn my_project.wsgi:application"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: my_database
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
